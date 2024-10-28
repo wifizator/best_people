@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169464391961",
+    "project_id": "oamenibuni-3e101",
+    "storage_bucket": "oamenibuni-3e101.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169464391961:android:1836ee4f9fa8c59e08bd88",
+        "android_client_info": {
+          "package_name": "com.example.best_people"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJwSd66HW1bcnTIKiAUO3THTV28g4mJas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
