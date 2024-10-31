@@ -46,6 +46,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '169464391961',
     projectId: 'oamenibuni-3e101',
     authDomain: 'oamenibuni-3e101.firebaseapp.com',
+    databaseURL: 'https://oamenibuni-3e101-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'oamenibuni-3e101.appspot.com',
   );
 
@@ -54,6 +55,7 @@ class DefaultFirebaseOptions {
     appId: '1:169464391961:android:1836ee4f9fa8c59e08bd88',
     messagingSenderId: '169464391961',
     projectId: 'oamenibuni-3e101',
+    databaseURL: 'https://oamenibuni-3e101-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'oamenibuni-3e101.appspot.com',
   );
 
@@ -62,6 +64,7 @@ class DefaultFirebaseOptions {
     appId: '1:169464391961:ios:07308cd9f8ebf10508bd88',
     messagingSenderId: '169464391961',
     projectId: 'oamenibuni-3e101',
+    databaseURL: 'https://oamenibuni-3e101-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'oamenibuni-3e101.appspot.com',
     iosBundleId: 'com.example.bestPeople',
   );
@@ -71,6 +74,7 @@ class DefaultFirebaseOptions {
     appId: '1:169464391961:ios:07308cd9f8ebf10508bd88',
     messagingSenderId: '169464391961',
     projectId: 'oamenibuni-3e101',
+    databaseURL: 'https://oamenibuni-3e101-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'oamenibuni-3e101.appspot.com',
     iosBundleId: 'com.example.bestPeople',
   );
@@ -81,6 +85,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '169464391961',
     projectId: 'oamenibuni-3e101',
     authDomain: 'oamenibuni-3e101.firebaseapp.com',
+    databaseURL: 'https://oamenibuni-3e101-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'oamenibuni-3e101.appspot.com',
   );
 
