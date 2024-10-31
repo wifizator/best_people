@@ -34,14 +34,15 @@ class _CreateaccountscreenState extends State<Createaccountscreen> {
       return;
     }
     inputFormKey.currentState!.save();
-    
+
     context.loaderOverlay.show();
     try {
+      //sign in
       var _userCredentials = await _firebase.createUserWithEmailAndPassword(
           email: inputEmail, password: inputPassword);
 
-//does not work fix it! No rights..
-      var db=await FirebaseFirestore.instance
+      //create new doc with uid as name
+      await FirebaseFirestore.instance
           .collection('users')
           .doc(_userCredentials.user!.uid)
           .set({
@@ -52,12 +53,10 @@ class _CreateaccountscreenState extends State<Createaccountscreen> {
         'phone_number': inputPhoneNumber,
         // 'image_url': imageUrl,
       });
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => MainAppScreen(),
-        ),
-      );
+
+      //workarround, go back, this way the streambuilder gets the handling.
+      Navigator.of(context).pop();
+
     } on Exception catch (error) {
       context.loaderOverlay.hide();
       ScaffoldMessenger.of(context).clearSnackBars();
