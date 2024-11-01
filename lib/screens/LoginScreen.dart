@@ -19,15 +19,23 @@ class _LoginScreenState extends State<LoginScreen> {
 
   var inputPassword;
 
+  final inputFormKey = GlobalKey<FormState>();
+
   void loginFireBase() async
   {
+    final isValid = inputFormKey.currentState!.validate();
+    if (!isValid) {
+      return;
+    }
+
+    inputFormKey.currentState!.save();
+
     try {
         context.loaderOverlay.show();
         final userCredentials = await FirebaseAuth.instance.signInWithEmailAndPassword(
             email: inputEmail, password: inputPassword);
 
         context.loaderOverlay.hide();
-        // Navigator.of(context).push(MaterialPageRoute(builder:(context) => const MainAppScreen(),));
       } on FirebaseException catch (error) {
         context.loaderOverlay.hide();
         ScaffoldMessenger.of(context).clearSnackBars();
@@ -47,6 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Column(
                 children: [
                   Form(
+                    key: inputFormKey,
                     child: Column(
                       children: [
                         TextFormField(

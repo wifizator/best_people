@@ -40,7 +40,10 @@ dependencies:
   firebase_storage: ^12.3.4
   loader_overlay: ^4.0.3
   cloud_firestore: ^5.4.4
-
+  firebase_ui_firestore: ^1.7.0
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
